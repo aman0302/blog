@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
 
+#=begin
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -37,3 +38,41 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+#=end
+
+=begin
+	
+rescue Exception => e
+	
+end
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+gem 'rails',        '4.2.0.rc1'
+gem 'sass-rails',   '5.0.0.beta1'
+gem 'uglifier',     '2.5.3'
+gem 'coffee-rails', '4.1.0'
+gem 'jquery-rails', '4.0.0.beta2'
+gem 'turbolinks',   '2.3.0'
+gem 'jbuilder',     '2.2.3'
+gem 'sdoc',         '0.4.0', group: :doc
+
+=end
+
+
+
+group :development, :test do
+#  gem 'sqlite3',     '1.3.9'
+  gem 'sqlite3'
+  gem 'byebug',      '3.4.0'
+  gem 'web-console', '2.0.0.beta3'
+  gem 'spring',      '1.1.3'
+end
+
+group :production do
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+end
+
+
+
+
